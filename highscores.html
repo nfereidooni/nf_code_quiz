@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="main.js"></script>
     <title>Code Quiz</title>
 </head>
 <body>
@@ -23,8 +24,8 @@
         <ol id='score-list' class="mb-4"></ol>
         <div class="row ml-5 mr-5">
             <div class="col-12 text-center">
-                <button type="button" class="btn btn-info btn-sm text-center restartBtn">Restart</button>
-                <button type="button" class="btn btn-info btn-sm text-center clearBtn">Clear Scores</button>
+                <a type="button" href="index.html" class="btn btn-info btn-sm text-center restartBtn">Restart</a>
+                <button type="button" class="btn btn-info btn-sm text-center clearBtn" onclick="clearHighscores()">Clear Scores</button>
             </div>
         </div>
 
