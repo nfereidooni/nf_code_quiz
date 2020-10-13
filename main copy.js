@@ -167,7 +167,7 @@ function answerPressed(answer) {
         nextQuestion();
       }
       else {
-        feedback.innerHTML = `<i>Wrong!</i>`;
+        feedback.innerHTML `<i>Wrong!</i>`;
         countdownTimer = countdownTimer - 10;
         nextQuestion();
       }
@@ -227,7 +227,7 @@ function submitHighscore() {
   
   userName = document.getElementById("userName");
   highscoreList = document.getElementById("score-list");
-  highscoreList.innerHTML = ""
+  // highscoreList.innerHTML = ""
   // let startPage = document.getElementById("startPage");
   // startPage.style.display = "none";
   // let questionPage = document.getElementById("questionPage");
@@ -237,11 +237,11 @@ function submitHighscore() {
 
   highscores.set(userName.value, gameScore)
 
-  if (highscores.length > 1) {
-    highscores[Symbol.iterator] = function* () {
-      yield* [...this.entries()].sort((x, y) => x[1] - y[1]);
-    }
-  }
+  // if (highscores.length > 1) {
+  //   highscores[Symbol.iterator] = function* () {
+  //     yield* [...this.entries()].sort((x, y) => x[1] - y[1]);
+  //   }
+  // }
 
   for (let [key, value] of highscores) {
     // let highscoreItem = document.createElement('li')
