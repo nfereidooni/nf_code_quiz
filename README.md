@@ -6,22 +6,39 @@ The goal of this project was to build a timed code quiz with multiple-choice que
 
 ## HTML File
 
+The HTML code is built with all pages / elements in the same file, using bootstrap to design the UI. It uses the display "none" and "inline" attributes to show and hide the different sections as you click through the quiz. The differente sections are:
+* The Start Page
+* The Questions Pages
+* The Results Screen
+* The Highscores Page
+
 ## Javascript File
 
-We had some starter code in our Javascript file, and to it I added:
-* An Event Listener to prompt user after clicking on generate button
-* Four arrays defining the various Character Sets (Special characters, numbers, lowercase and uppercase) 
-* A function that asks the user how many charcters and what character types they would like their password to contain
-* Actions assigned to each of the character type variables
-* A function that randomly selects password characters based on the required parameters
+The Javascript contains all of the quiz functionality.
+
+### Start Game
+* When Start Game is clicked, the timer starts (75 seconds) and you are presented with the first question
+
+### Questions
+* When the correct answer is clicked, 10 points is added to the user's score, and you are presented with the next question
+* When the incorrect answer is clicked, 10 seconds is subtracted from the clock, and you are presented with the next question
+
+### End Game
+* When all the questions are answered or the timer reached 0, the game ends
+* When the game ends, you can save your initials and score into the highscores list
+* On the highscores page, you can restart the game or clear the highscores list
 
 ## CSS File
 
-
+The CSS file is used to:
+* Hide the sections not required on the initial screen - "Start Page"
+* Center the Highscore Page
 
 ## Challenges & Potential Improvements
 
-
+* Centering of Highscore List
+* Sorting of Highscore List (highest score should be at the top)
+* Timer position in Navbar moves when screen is resized
 
 ## Credits
 

@@ -9,3 +9,8 @@
 .highscoresPage {
     display: none;
 }
+
+#highscoresPage {
+    text-align: center;
+    list-style-position: inside;
+  }
